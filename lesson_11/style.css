@@ -1,0 +1,15 @@
+div.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    /* több árnyékot is meg lehet adni egyszerre */
+    text-align: center;
+}
+
+div.container {
+    padding: 10px;
+    font-size: 2em;
+}
+
+div.container p {
+    text-shadow: 2px 2px 3px rgba(255, 0, 0, 0.5);
+}

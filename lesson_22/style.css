@@ -1,0 +1,21 @@
+/* Itt adom meg, hogy az adott osztályú konténer, ami az elemeket tartalmazza
+elrendezése grid legyen */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* a grid-template-columns-nál adom meg, hogy hány oszlopon legyen,
+    itt a négy auto azt jelenti négy egyforma oszlopom lesz */
+    grid-gap: 30px;
+    /* a grid-gap azt adja meg, hogy az egyes elemek között mekkora legyen az elhagyás,
+    csak közöttük, nem körülöttük, itt csak azért tűnik úgy (az eredetiben), mert a paddig is 10px */
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(190, 16, 16, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}

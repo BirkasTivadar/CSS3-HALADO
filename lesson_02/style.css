@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    /* ezzel adom meg, hogy a padding, és a border ne növelje meg az elem méretét */
+}
+
+.img-container {
+    float: right;
+    /* float: right;
+    fordítva fognak megjelenni */
+    width: 33.3%;
+    padding: 5px;
+}
+
+.container {
+    background-color: aqua;
+    display: inline-block;
+}
+
+.clearfix::after {
+    /* ezzel adom meg, hogy mellette már ne legyen semmi */
+    content: "";
+    clear: both;
+    display: table;
+}

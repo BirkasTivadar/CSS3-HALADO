@@ -1,0 +1,111 @@
+html,
+body {
+    display: -webkit-box;
+    display: flex;
+    min-height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tg-list {
+    text-align: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.tg-list-item {
+    margin: 0 2em;
+}
+
+h2 {
+    color: #777;
+}
+
+h4 {
+    color: #999;
+}
+
+.tgl {
+    display: none;
+    /* elrejti a checkboxot */
+}
+
+.tgl,
+.tgl::after,
+.tgl *,
+.tgl *::after,
+.tgl+.tgl-btn {
+    /*a legutolsó jelenti a tgl-en belüli labelt */
+    box-sizing: border-box;
+    /* nem kavar be a padding és a border a méretbe */
+}
+
+.tgl+.tgl-btn {
+    outline: 0;
+    /* ne legyen kiemelés */
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    /* ha fölévizsem az egeret, ki kéz jelzi, hogy lehet kattintani */
+    user-select: none;
+    /* nem tudom kijelölni, nem lesz kék háttér */
+}
+
+
+/* 
+most jön a kis gomb a labelen belül
+a ::before és ::after elemeket nem lehet beírással létrehozni, az böngésző hozza létre 
+*/
+
+.tgl+.tgl-btn::after {
+    position: relative;
+    /* így tudom kapcsolásnál megadni, hogy jobb vagy baloldalon legyen */
+    display: block;
+    content: "";
+    /* a ::before és ::after elemeknek meg tudok adni tartalmat
+    most üres tartlmat adtunk meg  */
+    width: 50%;
+    height: 100%;
+}
+
+.tgl+.tgl-btn::after {
+    left: 0;
+    /* alapból baloldalon legyen */
+}
+
+.tgl:checked+.tgl-btn::after {
+    /* itt adoim meg, hogy ha be van kapcsolva (.tgl:checked) akkor a gomb (.tgl-btn::after) jobbra legyen  */
+    left: 50%;
+}
+
+.tgl-btn {
+    background-color: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+}
+
+.tgl+.tgl-btn::after {
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.tgl:checked+.tgl-btn {
+    background-color: #9fd6ae;
+}

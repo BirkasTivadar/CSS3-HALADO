@@ -1,0 +1,41 @@
+.static {
+    position: static;
+    border: 3px solid red;
+}
+
+.relative {
+    position: relative;
+    left: 30px;
+    /* top: 50px;
+    right: 30px; */
+    /*ezt nem veszi figyelembe, mert kilóg */
+    /* bottom: 100px; */
+    border: 3px solid red;
+}
+
+.fixed {
+    position: fixed;
+    /* apozíció a böngészőablakhoz képest fixen van megadva */
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid red;
+}
+
+.absolute {
+    position: absolute;
+    /* ahhoz az első szülő elemhez igazítja magát, amelyik nem static, és ahhoz igazítja */
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid red;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: aquamarine;
+    border: 3px solid red;
+}

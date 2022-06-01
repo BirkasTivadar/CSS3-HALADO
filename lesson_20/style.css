@@ -1,0 +1,24 @@
+/* itt adom meg, hogy a az adott nevű osztályom (itt flex-container) flex elrendezésű legyen 
+ mindig a befogadó konténerre, (ami a flexbox elrendezésű elemeket tartalmazza) adom meg a felx elrendezés beállítást */
+
+.flex-container {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* a no-wrap-el azt állítom be, hogy ha összehúzom a képernyőt, akkor sem teszi egymás alá az elemeket, 
+    ha a megadott szélesség miatt (itt 100px) már nem férnének el, hanem az elemek méretét csökkenti (hiába rögzítettem 100px-ben a szélességet)
+    ha wrap-re állítom, akkor pedig megőrzi az elemek szélességét, és ha nem férnek el egymás alá rakja őket */
+    flex-wrap: wrap;
+    background-color: dodgerblue;
+}
+
+
+/* a flex-container-en belüli div elemek tulajdonságait állítom be */
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

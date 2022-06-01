@@ -1,0 +1,45 @@
+/* ha nem, container osztályú div */
+
+div:not(.container) {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border: 1px solid black;
+    box-shadow: 0 0 3px;
+}
+
+.translate {
+    /* van translateX és translateY is */
+    -ms-transform: translate(50px, 10px);
+    /* régi böngészőkben */
+    transform: translate(50px, 10px);
+    /* x irányba 50px-el y-ba 10px-el toljuk el. */
+    margin: 50px 0;
+    transform: translateX(300px);
+}
+
+.rotate {
+    -ms-transform: rotate(20deg);
+    /* régi böngészőkben */
+    transform: rotate(20deg);
+    /* azt adom meg hány fokkal forgatom el. */
+    margin: 50px 0;
+}
+
+.scale {
+    /* van scaleX és scaleY is */
+    -ms-transform: scale(2, 1.5);
+    /* régi böngészőkben */
+    transform: scale(2, 1.5);
+    /* méretezés, x éy irányba hányszoros legyen */
+    margin: 50px 0;
+}
+
+.matrix {
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    /* régi böngészőkben */
+    transform: matrix(1.5, -0.3, 0.5, 1.2, 200, 20);
+    /* sorrend: scaleX, skewY, skewX, scaleY, translateX, translateY */
+    /* a translateX, translateY méretnél csak számot adjak meg px nélkül */
+    margin: 50px 0;
+}

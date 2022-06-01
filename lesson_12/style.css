@@ -1,0 +1,54 @@
+.overflow1 {
+    white-space: nowrap;
+    /* azt állítom be, hogy szóköznél ne törje a szöveget */
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    /* azt állítom be, ami túlfolyik, az el lesz rejtve */
+    text-overflow: clip;
+}
+
+.overflow2 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* itt három ponttal zárja le a szöveget aztólcsordulás előtt */
+}
+
+p.wrap {
+    width: 11em;
+    border: 1px solid black;
+    word-break: keep-all;
+    /* itt akkor sem töri el a szót, ha nem fér ki, csak szóköznél és elválasztójeleknél */
+}
+
+p.word-break-1 {
+    width: 140px;
+    border: 1px solid black;
+    word-break: keep-all;
+}
+
+p.word-break-2 {
+    width: 140px;
+    border: 1px solid black;
+    word-break: break-all;
+    /* bárhol eltöri a sort */
+}
+
+p.writing-mode-1 {
+    writing-mode: horizontal-tb;
+}
+
+span.writing-mode-2 {
+    writing-mode: vertical-rl;
+}
+
+span.writing-mode-3 {
+    writing-mode: vertical-lr;
+}
+
+p.writing-mode-2 {
+    writing-mode: vertical-lr;
+}

@@ -1,0 +1,21 @@
+p {
+    font-size: 16px;
+    line-height: 2em;
+    /* kétszerese lesz a font-size beállításnak */
+}
+
+div {
+    font-size: 30px;
+    border: 1px solid blue;
+    width: 33vw;
+    height: 20vh;
+    /* a százalékos beállítás a szülő elemhez képest adja meg, a vh és vvw pedig a teljes böngészőablakhoz képest */
+}
+
+span {
+    font-size: 0.5em;
+    /* 0.5-szöröse lesz a szülő (div) méretének */
+}
+
+
+/* vh (viewport height) és vw (viewport width) mértékegység, a böngészőablak méretének százalékában adja meg az elem méretét */

@@ -1,0 +1,40 @@
+.container {
+    width: 200px;
+    height: 90px;
+    position: relative;
+    top: 5%;
+    float: left;
+    margin: 0 50px;
+}
+
+#animated_div {
+    width: 70px;
+    height: 47px;
+    background-color: #92b901;
+    color: #fff;
+    position: relative;
+    /* relative vagy absolute kell legyen, mert ha nem akkor nem tudom animálni pl. a left tulajdonságot, akkor nem mozog majd az elem */
+    padding: 10px;
+    border-radius: 5px;
+    /* itt alkalmazom az alant létrehozott animációt */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: animated_div_example 5s infinite;
+    /* csak a name, duration, iteration-count tulajdonságokat adtam meg */
+}
+
+
+/* itt hozom létre az animációt, a @keyframes után adok neki egy nevet
+   bármilyen elemre tudom alkamazni, nem csak egyre */
+
+@keyframes animated_div_example {
+    /* itt adom meg, hogy időben hány %-nál hol legyen az elem */
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 500px;
+    }
+    100% {
+        left: 0px;
+    }
+}

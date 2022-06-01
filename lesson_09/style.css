@@ -1,0 +1,14 @@
+     body {
+         margin-right: 200px;
+         /* 
+         background-color: aquamarine;
+         background-image: url("https://www.w3schools.com/css/img_tree.png");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         /* itt állítom be, hova csatolja a képet 
+         background-position: right top;
+        */
+         /* ugyanez shorthand-el */
+         background: aquamarine url("https://www.w3schools.com/css/img_tree.png") no-repeat fixed right top;
+         /* fontos, hogy shorthand-nél a sorrend be legyen tartva */
+     }

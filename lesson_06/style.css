@@ -1,0 +1,20 @@
+.container {
+  text-align: center;
+}
+
+.stars .fa-star {
+  color: gold;
+  font-size: 2em;
+  text-shadow: 0 0 2px #ff0000;
+  width: 2em;
+  line-height: 2em;
+  cursor: pointer;
+
+  display: inline;
+/* felülírja width-et, és az alsó felső margin-t nem veszi figyelembe, a padding-ot viszont igen */
+
+  /* display: block; */
+
+  display: inline-block;
+  /* ez a legkedveltebb, mert sorban vannak az elemek, de nem írja felül a width-et (font-awesome-nál ez az alapérték) lsd. vizsgálat a honlapom */
+}
